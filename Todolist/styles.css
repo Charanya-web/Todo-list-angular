@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.add-task {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color: #ff3333;
+}
+
+.container {
+    background-color: #FFFFE0; /* Set the background color to very light yellow */
+    max-width: 400px;
+    margin: 0 auto; /* Horizontally center the container */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the container */
+    justify-content: center; /* Vertically center the container */
+    height: 100vh; /* Make the container take up the full viewport height */
+}
+
+
+
+

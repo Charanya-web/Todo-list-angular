@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="ToDoApp">
+<head>
+    <title>Stylish To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="ToDoController">
+        <h1>Charanya's</h1>
+        <h1>Stylish To-Do list</h1>
+        <br>
+        <div class="add-task">
+            <input type="text" ng-model="newTask" placeholder="Add a new task">
+            <button class="add-button" ng-click="addTask()">Add</button>
+        </div>
+        <ul class="task-list">
+            <li ng-repeat="task in tasks" class="task">
+                <input type="checkbox" ng-model="task.completed" class="checkbox">
+                <span class="task-text" ng-class="{'completed': task.completed}">{{ task.text }}</span>
+                <button class="delete-button" ng-click="removeTask($index)">Delete</button>
+            </li>
+        </ul>
+        <!-- ... Existing code ... -->
+<ul class="task-list">
+    <li ng-repeat="task in tasks" class="task">
+        <input type="checkbox" ng-model="task.completed" class="checkbox">
+        <span class="task-text" ng-class="{'completed': task.completed}">{{ task.text }}</span>
+        <div class="task-details">
+            <input type="text" ng-model="task.priority" placeholder="Priority">
+            <input type="text" ng-model="task.timing" placeholder="Timing">
+        </div>
+        <button class="delete-button" ng-click="removeTask($index)">Delete</button>
+    </li>
+</ul>
+<!-- ... Existing code ... -->
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
